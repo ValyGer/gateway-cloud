@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавляем api-gateway">
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/entity/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-two/src/main/resources/templates/hello.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestRestController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,6 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_directory_selection": "C:/Users/gerai/div/test-eureka-gateway/eureka-client/src/main/java/ru/gerasimov/controller",
     "last_opened_file_path": "C:/Users/gerai/div/test-eureka-gateway/eureka-client-two/src/main/resources",
     "onboarding.tips.debug.path": "C:/Users/gerai/div/test-eureka-gateway/eureka-client-two/src/main/java/ru/gerasimov/Main.java",
     "project.structure.last.edited": "Modules",
@@ -51,6 +55,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.gerasimov.repo" />
+      <recent name="ru.gerasimov.service" />
+      <recent name="ru.gerasimov.controller" />
       <recent name="ru.gerasimov.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -74,7 +81,7 @@
       <module name="api-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gerasimov.controller.*" />
+          <option name="PATTERN" value="ru.gerasimov.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,7 +94,7 @@
       <module name="eureka-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gerasimov.controller.*" />
+          <option name="PATTERN" value="ru.gerasimov.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,7 +107,7 @@
       <module name="eureka-client-two" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gerasimov.controller.*" />
+          <option name="PATTERN" value="ru.gerasimov.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,7 +120,7 @@
       <module name="eureka-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gerasimov.controller.*" />
+          <option name="PATTERN" value="ru.gerasimov.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,8 +131,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApiGatewayApp" />
-        <item itemvalue="Application.EurekaClientTwoApp" />
         <item itemvalue="Application.EurekaClientApp" />
+        <item itemvalue="Application.EurekaClientTwoApp" />
         <item itemvalue="Application.EurekaServerApp" />
       </list>
     </recent_temporary>
@@ -195,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730060415833</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="добавляем api-gateway">
+      <created>1730062159816</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730062159816</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
