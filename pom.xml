@@ -27,6 +27,7 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>api-gateway</module>
+        <module>eureka-client-two</module>
     </modules>
 
     <dependencyManagement>
