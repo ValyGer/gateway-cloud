@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.crg">
+<head>
+    <meta charset="UTF-8">
+    <title>Все куклы</title>
+</head>
+<body>
+<h1>Коллекция кукол Алины</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Имя</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-th-each="doll:${dolls}">
+        <td data-th-text="${doll.dollName}"></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+</body>
+</html>

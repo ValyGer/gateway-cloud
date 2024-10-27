@@ -4,17 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавляем api-gateway">
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
+    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили 2 сервиса, настроили шлюз">
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/ClientBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/model/Doll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/doll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-two/src/main/resources/templates/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-two/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/EurekaClientTwoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/CatalogServiceApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/EurekaClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/UserServiceApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/entity/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/entity/Doll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
     "last_directory_selection": "C:/Users/gerai/div/test-eureka-gateway/eureka-client/src/main/java/ru/gerasimov/controller",
-    "last_opened_file_path": "C:/Users/gerai/div/test-eureka-gateway/eureka-client-two/src/main/resources",
+    "last_opened_file_path": "C:/Users/gerai/div/test-eureka-gateway/user-server/src/main/resources/templates",
     "onboarding.tips.debug.path": "C:/Users/gerai/div/test-eureka-gateway/eureka-client-two/src/main/java/ru/gerasimov/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -55,17 +70,22 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.gerasimov.client" />
       <recent name="ru.gerasimov.repo" />
       <recent name="ru.gerasimov.service" />
       <recent name="ru.gerasimov.controller" />
       <recent name="ru.gerasimov.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gerai\div\test-eureka-gateway\user-server\src\main\resources\templates" />
       <recent name="C:\Users\gerai\div\test-eureka-gateway\eureka-client-two\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gerai\div\test-eureka-gateway\eureka-client-two\src\main\resources\templates" />
       <recent name="C:\Users\gerai\div\test-eureka-gateway\eureka-client-two\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.gerasimov.client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -75,7 +95,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EurekaClientTwoApp">
+  <component name="RunManager" selected="Application.UserServiceApp">
     <configuration name="ApiGatewayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gerasimov.ApiGatewayApp" />
       <module name="api-gateway" />
@@ -89,25 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaClientApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.EurekaClientApp" />
-      <module name="eureka-client" />
+    <configuration name="CatalogServiceApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.CatalogServiceApp" />
+      <module name="catalog-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gerasimov.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaClientTwoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.EurekaClientTwoApp" />
-      <module name="eureka-client-two" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gerasimov.service.*" />
+          <option name="PATTERN" value="ru.gerasimov.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +135,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.UserServiceApp" />
+      <module name="user-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gerasimov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserServiceApp" />
+        <item itemvalue="Application.CatalogServiceApp" />
         <item itemvalue="Application.ApiGatewayApp" />
-        <item itemvalue="Application.EurekaClientApp" />
-        <item itemvalue="Application.EurekaClientTwoApp" />
         <item itemvalue="Application.EurekaServerApp" />
       </list>
     </recent_temporary>
@@ -209,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730062159816</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="добавили 2 сервиса, настроили шлюз">
+      <created>1730066220860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730066220860</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,7 +254,8 @@
     <MESSAGE value="пустой проект" />
     <MESSAGE value="создали сервер и клиент эврики" />
     <MESSAGE value="добавляем api-gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавляем api-gateway" />
+    <MESSAGE value="добавили 2 сервиса, настроили шлюз" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили 2 сервиса, настроили шлюз" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -237,8 +265,18 @@
           <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.web.client.DefaultRestClient" memberName="observationRegistry" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
