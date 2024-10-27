@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="пустой проект">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/ru/gerasimov/EurekaServerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gerasimov/Main.java" beforeDir="false" />
+    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="создали сервер и клиент эврики">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/EurekaClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/EurekaClientApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +38,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-11",
-    "onboarding.tips.debug.path": "C:/Users/gerai/div/test-eureka-gateway/eureka-server/src/main/java/ru/gerasimov/Main.java",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "onboarding.tips.debug.path": "C:/Users/gerai/div/test-eureka-gateway/eureka-clien/src/main/java/ru/gerasimov/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.14831804"
@@ -56,7 +53,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EurekaClientApp">
+    <configuration name="EurekaClientApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.EurekaClientApp" />
+      <module name="eureka-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gerasimov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gerasimov.EurekaServerApp" />
       <module name="eureka-server" />
@@ -72,6 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EurekaClientApp" />
         <item itemvalue="Application.EurekaServerApp" />
       </list>
     </recent_temporary>
@@ -99,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1730039141781</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="создали сервер и клиент эврики">
+      <created>1730043842598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730043842598</updated>
+    </task>
+    <task id="LOCAL-00004" summary="создали сервер и клиент эврики">
+      <created>1730043848681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730043848681</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,7 +140,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="пустой проект" />
-    <option name="LAST_COMMIT_MESSAGE" value="пустой проект" />
+    <MESSAGE value="создали сервер и клиент эврики" />
+    <option name="LAST_COMMIT_MESSAGE" value="создали сервер и клиент эврики" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
