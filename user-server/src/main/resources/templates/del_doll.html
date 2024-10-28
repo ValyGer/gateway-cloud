@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.crg">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1> удаляем куклу </h1>
+<form method="post" data-th-action="@{/user/delete/{dollId}(dollId = ${dollId})">
+    <label>
+        ID куклы:<br>
+        <input type="text" id="dollId" data-th-value="${doll?.dollId}">
+    </label>
+    <br>
+    <button type="submit">Удаляем((</button>
+</form>
+</body>
+</html>

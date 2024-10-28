@@ -41,4 +41,16 @@ public class TestController {
         return "doll";
     }
 
+    @GetMapping("/delete")
+    public String getDeleteDollPage(){
+        return "del_doll";
+    }
+
+    @PostMapping("/delete")
+    public String deleteDoll(int dollId) {
+        dollClient.deleteDoll(dollId);
+        return "redirect:/user/dolls";
+    }
+
+
 }

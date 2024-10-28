@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента">
-      <change afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/edit_doll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/entity/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/entity/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/model/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/model/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/doll.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/doll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" afterDir="false" />
-    </list>
+    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +69,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApp">
+  <component name="RunManager" selected="Application.CatalogServiceApp">
     <configuration name="ApiGatewayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gerasimov.ApiGatewayApp" />
       <module name="api-gateway" />
@@ -147,9 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CatalogServiceApp" />
         <item itemvalue="Application.UserServiceApp" />
         <item itemvalue="Application.ApiGatewayApp" />
-        <item itemvalue="Application.CatalogServiceApp" />
         <item itemvalue="Application.EurekaServerApp" />
       </list>
     </recent_temporary>
@@ -240,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1730071236296</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Прикрутили базу данных к серверу каталога. Настроили возможность добавления сущностей в базу через приложение user">
+      <created>1730126331140</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730126331140</updated>
+    </task>
+    <task id="LOCAL-00013" summary="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman">
+      <created>1730126957796</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730126957796</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +251,9 @@
     <MESSAGE value="добавляем api-gateway" />
     <MESSAGE value="добавили 2 сервиса, настроили шлюз" />
     <MESSAGE value="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента" />
+    <MESSAGE value="Прикрутили базу данных к серверу каталога. Настроили возможность добавления сущностей в базу через приложение user" />
+    <MESSAGE value="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

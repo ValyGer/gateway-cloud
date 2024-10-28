@@ -12,4 +12,5 @@ public interface DollClient {
 
     Doll getDollById(int id);
 
+    void deleteDoll(int dollId);
 }

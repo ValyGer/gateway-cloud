@@ -39,8 +39,17 @@ public class DollClientImpl implements DollClient {
     public Doll getDollById(int dollId) {
         return restClient
                 .get()
-                .uri("admin//dolls/{dollId}", dollId)
+                .uri("admin/dolls/{dollId}", dollId)
                 .retrieve()
                 .body(Doll.class);
+    }
+
+    @Override
+    public void deleteDoll(int dollId) {
+        restClient
+                .delete()
+                .uri("admin/delete/{dollId}", dollId)
+                .retrieve()
+                .toBodilessEntity();
     }
 }
