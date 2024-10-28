@@ -21,6 +21,11 @@ public class DollServiceImpl implements DollService {
     }
 
     @Override
+    public void deletedoll(int dollId) {
+        dollRepository.deleteById(dollId);
+    }
+
+    @Override
     @Transactional
     public List<Doll> findAllDolls() {
         return dollRepository.findAll();

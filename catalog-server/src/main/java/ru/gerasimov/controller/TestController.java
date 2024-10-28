@@ -21,6 +21,10 @@ public class TestController {
         return ResponseEntity.ok().body(dollService.createDoll(doll));
     }
 
+    @DeleteMapping("/delete/{dollId}")
+    public void deleteDoll(@PathVariable int dollId) {
+        dollService.deletedoll(dollId);
+    }
 
     @GetMapping("/dolls/{dollId}")
     public ResponseEntity<Doll> getDollById(@PathVariable int dollId) {
