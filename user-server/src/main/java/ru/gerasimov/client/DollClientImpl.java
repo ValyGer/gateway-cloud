@@ -45,10 +45,10 @@ public class DollClientImpl implements DollClient {
     }
 
     @Override
-    public void deleteDoll(int dollId) {
+    public void deleteDoll(int id) {
         restClient
                 .delete()
-                .uri("admin/delete/{dollId}", dollId)
+                .uri("admin/delete/{dollId}", id)
                 .retrieve()
                 .toBodilessEntity();
     }

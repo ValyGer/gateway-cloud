@@ -1,0 +1,57 @@
+# версия Docker Compose
+version: '3.8'
+
+# имена и описания контейнеров, которые должны быть развёрнуты
+services:
+  # описание контейнера 
+  eureka-server:
+    # тут ссылка на Docker файл, если он лежит там же, то указываем "."
+    build: eureka-server
+    # тут пишем имя образа
+    # image:
+    # перезапуск контейнера в случае ошибки
+    # restart: "on-failure"
+    # указывает имя контейнера
+    container_name: eureka-server-cont
+    # тут пишем true в случае если нужно чтобы запущенный контейнер работал постоянно
+    tty: true
+    # проброска портов слева порт виртуальной машины или компьютера, справа порт контейнера
+    ports:
+      - "8761:8761"
+
+  catalog-server:
+    build: catalog-server
+    container_name: catalog-server-cont
+    tty: true
+    ports:
+      - "8080:8080"
+    depends_on:
+      - test-db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://test-db:5432/test
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=123456
+
+  test-db:
+    image: postgres:14-alpine
+    container_name: test-db
+    ports:
+      - "6541:5432"
+    environment:
+      - POSTGRES_DB=test
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+
+  user-server:
+    build: user-server
+    container_name: user-server-cont
+    tty: true
+    ports:
+      - "8081:8081"
+
+  api-gateway:
+    build: api-gateway
+    container_name: api-gateway-cont
+    tty: true
+    ports:
+      - "81:8765"

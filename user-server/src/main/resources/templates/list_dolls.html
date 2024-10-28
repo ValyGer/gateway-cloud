@@ -6,22 +6,23 @@
 </head>
 <body>
 <h1>Коллекция кукол Алины</h1>
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Имя</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr data-th-each="doll:${dolls}">
-        <td data-th-text="${doll.dollId}"></td>
-    </tr>
-    <tr data-th-each="doll:${dolls}">
-        <td data-th-text="${doll.dollName}"></td>
-    </tr>
-    </tbody>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Имя</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-th-each="doll:${dolls}">
+                <td>
+                    <a data-th-href="@{dolls/{dollId}(dollId=${doll.dollId})}"
+                       data-th-text="${doll.dollId}"></a>
+                </td>
+                <td data-th-text="${doll.dollName}"></td>
+            </tr>
+        </tbody>
+    </table>
 <br>
 </body>
 </html>

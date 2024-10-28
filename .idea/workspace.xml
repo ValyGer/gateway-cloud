@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman" />
+    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили метод удалить в контроллер">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/del_doll.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/del_doll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/edit_doll.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/edit_doll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +77,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CatalogServiceApp">
+  <component name="RunManager" selected="Application.UserServiceApp">
     <configuration name="ApiGatewayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gerasimov.ApiGatewayApp" />
       <module name="api-gateway" />
@@ -124,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CatalogServiceApp" />
         <item itemvalue="Application.UserServiceApp" />
+        <item itemvalue="Application.CatalogServiceApp" />
         <item itemvalue="Application.ApiGatewayApp" />
         <item itemvalue="Application.EurekaServerApp" />
       </list>
@@ -231,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730126957796</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="добавили метод удалить в контроллер">
+      <created>1730127928394</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730127928394</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +268,8 @@
     <MESSAGE value="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента" />
     <MESSAGE value="Прикрутили базу данных к серверу каталога. Настроили возможность добавления сущностей в базу через приложение user" />
     <MESSAGE value="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman" />
+    <MESSAGE value="добавили метод удалить в контроллер" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили метод удалить в контроллер" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -262,6 +278,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/ru/gerasimov/Main.java</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -47,7 +47,7 @@ public class TestController {
     }
 
     @PostMapping("/delete")
-    public String deleteDoll(int dollId) {
+    public String deleteDoll(Integer dollId) {
         dollClient.deleteDoll(dollId);
         return "redirect:/user/dolls";
     }
