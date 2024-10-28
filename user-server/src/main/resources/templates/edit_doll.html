@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.crg">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1> добавляем куклу </h1>
+<form method="post" data-th-action="@{/user/create}" enctype="multipart/form-data">
+    <label>
+        Имя куклы:<br>
+        <input type="text" name="dollName" data-th-value="${doll?.dollName}">
+    </label>
+    <br>
+    <button type="submit">Добавляем)))</button>
+</form>
+</body>
+</html>

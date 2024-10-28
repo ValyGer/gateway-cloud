@@ -3,10 +3,9 @@ package ru.gerasimov.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import ru.gerasimov.client.DollClient;
+import ru.gerasimov.model.Doll;
 
 @Controller
 @RequestMapping("/user")
@@ -18,6 +17,16 @@ public class TestController {
     @GetMapping("/page")
     public String getPageHello(){
         return "hello";
+    }
+
+    @GetMapping("/create")
+    public String getCreateDollPage(){
+        return "edit_doll";
+    }
+
+    @PostMapping("/create")
+    public String createDoll(Doll doll){
+        return "redirect:/user/dolls/%d".formatted(this.dollClient.createDoll(doll).getDollId());
     }
 
     @GetMapping("/dolls")

@@ -17,6 +17,16 @@ public class DollClientImpl implements DollClient {
     private final RestClient restClient;
 
     @Override
+    public Doll createDoll(Doll doll) {
+        return restClient
+                .post()
+                .uri("admin/dolls")
+                .body(doll)
+                .retrieve()
+                .body(Doll.class);
+    }
+
+    @Override
     public List<Doll> getAllDolls() {
         return restClient
                 .get()

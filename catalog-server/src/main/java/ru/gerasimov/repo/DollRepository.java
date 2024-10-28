@@ -1,12 +1,7 @@
 package ru.gerasimov.repo;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import ru.gerasimov.entity.Doll;
 
-import java.util.List;
-
-public interface DollRepository {
-
-    List<Doll> getAllDolls();
-
-    Doll getDollById(int id);
+public interface DollRepository extends JpaRepository<Doll, Integer> {
 }

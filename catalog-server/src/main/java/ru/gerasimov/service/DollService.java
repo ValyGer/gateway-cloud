@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface DollService {
 
+    Doll createDoll(Doll doll);
+
     List<Doll> findAllDolls();
 
     Doll findDollById(int id);

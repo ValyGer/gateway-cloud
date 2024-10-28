@@ -9,10 +9,14 @@
 <table>
     <thead>
     <tr>
+        <th>ID</th>
         <th>Имя</th>
     </tr>
     </thead>
     <tbody>
+    <tr data-th-each="doll:${dolls}">
+        <td data-th-text="${doll.dollId}"></td>
+    </tr>
     <tr data-th-each="doll:${dolls}">
         <td data-th-text="${doll.dollName}"></td>
     </tr>

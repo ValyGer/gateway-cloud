@@ -16,6 +16,12 @@ public class TestController {
 
     private final DollService dollService;
 
+    @PostMapping("/dolls")
+    public ResponseEntity<Doll> createDoll(@RequestBody Doll doll) {
+        return ResponseEntity.ok().body(dollService.createDoll(doll));
+    }
+
+
     @GetMapping("/dolls/{dollId}")
     public ResponseEntity<Doll> getDollById(@PathVariable int dollId) {
         return ResponseEntity.ok().body(dollService.findDollById(dollId));

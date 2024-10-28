@@ -4,32 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили 2 сервиса, настроили шлюз">
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/ClientBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/model/Doll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/doll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента">
+      <change afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/edit_doll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/EurekaClientTwoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/CatalogServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-two/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/EurekaClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/UserServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/entity/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/entity/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/gerasimov/service/DollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/entity/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/entity/Doll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/repo/DollRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/model/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/model/Doll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/doll.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/doll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,8 +148,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserServiceApp" />
-        <item itemvalue="Application.CatalogServiceApp" />
         <item itemvalue="Application.ApiGatewayApp" />
+        <item itemvalue="Application.CatalogServiceApp" />
         <item itemvalue="Application.EurekaServerApp" />
       </list>
     </recent_temporary>
@@ -236,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730066220860</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента">
+      <created>1730071236296</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730071236296</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +259,8 @@
     <MESSAGE value="создали сервер и клиент эврики" />
     <MESSAGE value="добавляем api-gateway" />
     <MESSAGE value="добавили 2 сервиса, настроили шлюз" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили 2 сервиса, настроили шлюз" />
+    <MESSAGE value="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили контроллеры, сервесы, сущности, страницы и клиента. Серверы общаются только через шлюз как по ссылкам со странице так и через клиента" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -264,11 +269,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/ru/gerasimov/Main.java</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
