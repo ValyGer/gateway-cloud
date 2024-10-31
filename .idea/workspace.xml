@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="прикрутили докер">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gerai.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/option/docker-compose -pract.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +42,7 @@
     "last_directory_selection": "C:/Users/gerai/div/test-eureka-gateway/eureka-client/src/main/java/ru/gerasimov/controller",
     "last_opened_file_path": "C:/Users/gerai/div/test-eureka-gateway",
     "onboarding.tips.debug.path": "C:/Users/gerai/div/test-eureka-gateway/eureka-client-two/src/main/java/ru/gerasimov/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.14831804",
     "run.code.analysis.last.selected.profile": "aDefault",
@@ -96,27 +81,29 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yaml.eclient-two: Compose Deployment">
+  <component name="RunManager" selected="Application.EurekaServerApp">
+    <configuration name="EurekaServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.EurekaServerApp" />
+      <module name="eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gerasimov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="docker-compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yaml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="db" />
-            </list>
-          </option>
           <option name="sourceFilePath" value="docker-compose.yaml" />
         </settings>
       </deployment>
@@ -163,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EurekaServerApp" />
         <item itemvalue="Docker.docker-compose.yaml.eclient-two: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yaml.eclient: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yaml.test: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yaml.db: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730140311173</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="прикрутили докер">
+      <created>1730346682198</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730346682198</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
