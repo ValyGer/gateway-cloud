@@ -21,7 +21,7 @@ public class DollServiceImpl implements DollService {
     }
 
     @Override
-    public void deletedoll(int dollId) {
+    public void deleteDoll(int dollId) {
         dollRepository.deleteById(dollId);
     }
 

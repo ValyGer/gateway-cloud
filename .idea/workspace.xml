@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="добавили метод удалить в контроллер">
+    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="прикрутили докер">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gerai.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/option/docker-compose -pract.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/del_doll.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/del_doll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/edit_doll.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/edit_doll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/list_dolls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/service/DollServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +39,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2o1ZI6pPzPUYElYUL5cXWGjsihy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,12 +55,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
     "last_directory_selection": "C:/Users/gerai/div/test-eureka-gateway/eureka-client/src/main/java/ru/gerasimov/controller",
-    "last_opened_file_path": "C:/Users/gerai/div/test-eureka-gateway/user-server/src/main/resources/templates",
+    "last_opened_file_path": "C:/Users/gerai/div/test-eureka-gateway",
     "onboarding.tips.debug.path": "C:/Users/gerai/div/test-eureka-gateway/eureka-client-two/src/main/java/ru/gerasimov/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.14831804",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,10 +73,15 @@
       <recent name="ru.gerasimov.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gerai\div\test-eureka-gateway\user-server\src\main\resources\templates" />
-      <recent name="C:\Users\gerai\div\test-eureka-gateway\eureka-client-two\src\main\resources" />
+      <recent name="C:\Users\gerai\div\test-eureka-gateway" />
+      <recent name="C:\Users\gerai\div\test-eureka-gateway\api-gateway" />
+      <recent name="C:\Users\gerai\div\test-eureka-gateway\catalog-server" />
+      <recent name="C:\Users\gerai\div\test-eureka-gateway\eureka-server" />
+      <recent name="C:\Users\gerai\div\test-eureka-gateway\user-server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gerai\div\test-eureka-gateway" />
+      <recent name="C:\Users\gerai\div\test-eureka-gateway\option" />
       <recent name="C:\Users\gerai\div\test-eureka-gateway\eureka-client-two\src\main\resources\templates" />
       <recent name="C:\Users\gerai\div\test-eureka-gateway\eureka-client-two\src\main\resources" />
     </key>
@@ -77,65 +96,78 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApp">
-    <configuration name="ApiGatewayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.ApiGatewayApp" />
-      <module name="api-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gerasimov.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Docker.docker-compose.yaml.eclient-two: Compose Deployment">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
     </configuration>
-    <configuration name="CatalogServiceApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.CatalogServiceApp" />
-      <module name="catalog-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gerasimov.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
-    <configuration name="EurekaServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.EurekaServerApp" />
-      <module name="eureka-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gerasimov.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="docker-compose.yaml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
-    <configuration name="UserServiceApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gerasimov.UserServiceApp" />
-      <module name="user-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gerasimov.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="docker-compose.yaml.eclient-two: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="eclient-two" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.eclient: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="eclient" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.test: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="test" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserServiceApp" />
-        <item itemvalue="Application.CatalogServiceApp" />
-        <item itemvalue="Application.ApiGatewayApp" />
-        <item itemvalue="Application.EurekaServerApp" />
+        <item itemvalue="Docker.docker-compose.yaml.eclient-two: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml.eclient: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml.test: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml.db: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730127928394</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="прикрутили докер">
+      <created>1730140311173</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730140311173</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,7 +308,8 @@
     <MESSAGE value="Прикрутили базу данных к серверу каталога. Настроили возможность добавления сущностей в базу через приложение user" />
     <MESSAGE value="добавили в каталог метод удаления, чтобы отрабатывать с базой через postman" />
     <MESSAGE value="добавили метод удалить в контроллер" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили метод удалить в контроллер" />
+    <MESSAGE value="прикрутили докер" />
+    <option name="LAST_COMMIT_MESSAGE" value="прикрутили докер" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -278,21 +318,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/ru/gerasimov/Main.java</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

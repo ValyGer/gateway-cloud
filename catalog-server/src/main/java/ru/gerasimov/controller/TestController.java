@@ -1,7 +1,6 @@
 package ru.gerasimov.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.gerasimov.entity.Doll;
@@ -23,7 +22,7 @@ public class TestController {
 
     @DeleteMapping("/delete/{dollId}")
     public void deleteDoll(@PathVariable int dollId) {
-        dollService.deletedoll(dollId);
+        dollService.deleteDoll(dollId);
     }
 
     @GetMapping("/dolls/{dollId}")

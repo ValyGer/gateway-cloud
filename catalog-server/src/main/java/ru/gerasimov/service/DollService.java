@@ -8,7 +8,7 @@ public interface DollService {
 
     Doll createDoll(Doll doll);
 
-    void deletedoll(int dollId);
+    void deleteDoll(int dollId);
 
     List<Doll> findAllDolls();
 

@@ -1,57 +1,89 @@
-# версия Docker Compose
-version: '3.8'
+version: '3.1'
 
-# имена и описания контейнеров, которые должны быть развёрнуты
 services:
-  # описание контейнера 
-  eureka-server:
-    # тут ссылка на Docker файл, если он лежит там же, то указываем "."
+  eserver:
     build: eureka-server
-    # тут пишем имя образа
-    # image:
-    # перезапуск контейнера в случае ошибки
-    # restart: "on-failure"
-    # указывает имя контейнера
+    hostname: eserver
+    environment:
+      - SPRING_APPLICATION_NAME=eserver
     container_name: eureka-server-cont
-    # тут пишем true в случае если нужно чтобы запущенный контейнер работал постоянно
     tty: true
-    # проброска портов слева порт виртуальной машины или компьютера, справа порт контейнера
-    ports:
-      - "8761:8761"
+    expose:
+      - "8761"
+    networks:
+      services-network-01:
+        aliases:
+          - eserver
 
-  catalog-server:
+  eclient:
     build: catalog-server
+    hostname: eclient
     container_name: catalog-server-cont
     tty: true
     ports:
       - "8080:8080"
-    depends_on:
-      - test-db
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://test-db:5432/test
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=123456
+      - SPRING_APPLICATION_NAME=eclient
+      - DB_HOST=db
+      - DB_PORT=6060
+      - DB_NAME=test
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+    networks:
+      services-network-01:
+        aliases:
+          - eclient
+    depends_on:
+      - eserver
+      - test
 
-  test-db:
+  test:
     image: postgres:14-alpine
-    container_name: test-db
+    container_name: catalog-db
     ports:
-      - "6541:5432"
+      - "127.0.0.1:6060:5432"
     environment:
       - POSTGRES_DB=test
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123456
+    networks:
+      services-network-01:
+        aliases:
+          - test
 
-  user-server:
+  eclient-two:
     build: user-server
+    hostname: eclient-two
+    environment:
+      - SPRING_APPLICATION_NAME=eclient-two
     container_name: user-server-cont
     tty: true
     ports:
       - "8081:8081"
+    networks:
+      services-network-01:
+        aliases:
+          - eclient-two
+    depends_on:
+      - eserver
 
   api-gateway:
     build: api-gateway
+    hostname: api-gateway
+    environment:
+      - SPRING_APPLICATION_NAME=api-gateway
     container_name: api-gateway-cont
     tty: true
     ports:
-      - "81:8765"
+      - "8765:8765"
+    networks:
+      services-network-01:
+        aliases:
+          - api-gateway
+    depends_on:
+      - eserver
+
+networks:
+  services-network-01:
+    name: services-network-01
+    driver: bridge
