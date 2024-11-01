@@ -9,7 +9,7 @@ services:
     container_name: eureka-server-cont
     tty: true
     expose:
-      - "8761"
+      - "127.0.0.1:8761:8761"
     networks:
       services-network-01:
         aliases:
@@ -24,8 +24,10 @@ services:
       - "8080:8080"
     environment:
       - SPRING_APPLICATION_NAME=eclient
-      - DB_HOST=db
-      - DB_PORT=6060
+      - DB_HOST=catalog-db # тут надо указывать имя контейнера,
+      #так как база развернута в отдельном контейнере,
+      #а localhost - посути это обращение внутрь себя
+      - DB_PORT=5432
       - DB_NAME=test
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123456
@@ -41,7 +43,7 @@ services:
     image: postgres:14-alpine
     container_name: catalog-db
     ports:
-      - "127.0.0.1:6060:5432"
+      - "5432:5432"
     environment:
       - POSTGRES_DB=test
       - POSTGRES_USER=postgres
