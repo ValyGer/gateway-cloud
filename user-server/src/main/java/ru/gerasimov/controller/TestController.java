@@ -26,7 +26,7 @@ public class TestController {
 
     @PostMapping("/create")
     public String createDoll(Doll doll){
-        return "redirect:http://localhost:8765/user/dolls/%d".formatted(this.dollClient.createDoll(doll).getDollId());
+        return "redirect:http://localhost:80/user/dolls/%d".formatted(this.dollClient.createDoll(doll).getDollId());
     }
 
     @GetMapping("/dolls")
@@ -49,7 +49,7 @@ public class TestController {
     @PostMapping("/delete")
     public String deleteDoll(Integer dollId) {
         dollClient.deleteDoll(dollId);
-        return "redirect:http://localhost:8765/user/dolls";
+        return "redirect:http://localhost:80/user/dolls";
     }
 
 

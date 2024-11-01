@@ -77,7 +77,7 @@ services:
     container_name: api-gateway-cont
     tty: true
     ports:
-      - "8765:8765"
+      - "80:80"
     networks:
       services-network-01:
         aliases:
