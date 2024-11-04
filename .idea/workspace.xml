@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="откорректированы версии и настройкапортов">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4a2ed15f-9102-47ae-a1cc-c50bbcb03590" name="Changes" comment="Настройки для локального пользования">
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,10 +161,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EurekaServerApp" />
         <item itemvalue="Application.UserServiceApp" />
         <item itemvalue="Application.ApiGatewayApp" />
         <item itemvalue="Application.CatalogServiceApp" />
-        <item itemvalue="Application.EurekaServerApp" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -348,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730497693476</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Настройки для локального пользования">
+      <created>1730740940350</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740940350</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,7 +379,8 @@
     <MESSAGE value="прикрутили докер" />
     <MESSAGE value="меняем порт на 80 для домена" />
     <MESSAGE value="откорректированы версии и настройкапортов" />
-    <option name="LAST_COMMIT_MESSAGE" value="откорректированы версии и настройкапортов" />
+    <MESSAGE value="Настройки для локального пользования" />
+    <option name="LAST_COMMIT_MESSAGE" value="Настройки для локального пользования" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -383,21 +389,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/ru/gerasimov/Main.java</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/controller/TestController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-server/src/main/java/ru/gerasimov/client/DollClientImpl.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
