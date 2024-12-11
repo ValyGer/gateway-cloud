@@ -19,8 +19,7 @@ services:
 
   eclient:
     build: catalog-server
-    hostname: eclient
-    container_name: catalog-server-cont
+    container_name: eclient
     tty: true
     ports:
       - "8080:8080"
@@ -30,12 +29,11 @@ services:
       - EUREKA_PORT=8761
       - DB_HOST=catalog-db # тут надо указывать имя контейнера,
       #так как база развернута в отдельном контейнере,
-      #а localhost - посути это обращение внутрь себя
+      #а localhost - по сути это обращение внутрь себя
       - DB_PORT=5432
       - DB_NAME=test
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123456
-
     networks:
       services-network-01:
         aliases:
@@ -60,14 +58,13 @@ services:
 
   eclient-two:
     build: user-server
-    hostname: eclient-two
+    container_name: eclient-two
     environment:
       - SPRING_APPLICATION_NAME=eclient-two
       - API-GATE_PORT=8765
       - API-GATE_HOST=api-gateway-cont
       - EUREKA_NAME=eserver
       - EUREKA_PORT=8761
-    container_name: user-server-cont
     tty: true
     ports:
       - "8081:8081"
@@ -88,7 +85,6 @@ services:
     container_name: api-gateway-cont
     tty: true
     ports:
-      - "8765:8765"
       - "80:8765"
     networks:
       services-network-01:
